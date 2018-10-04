@@ -1,0 +1,18 @@
+<div>
+    <div *ngFor="let forecast of weatherForecasts">
+        <table class="table">
+            <tr>
+                <th>Date</th>
+                <th>Max Temp</th>
+                <th>Min Temp</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>{{forecast.datetime}}</td>
+                    <td>{{forecast.max_temp}}&deg;C</td>
+                    <td>{{forecast.min_temp}}&deg;C</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
